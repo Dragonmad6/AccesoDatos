@@ -17,7 +17,6 @@ public class Accesosistemaficheros {
 			if(listaCarpetas[i].getName().endsWith("txt")) {
 				System.out.println("-txt-");
 			}
-			//gayfsd
 			System.out.println(listaCarpetas[i].getName());
 		}
 	}
