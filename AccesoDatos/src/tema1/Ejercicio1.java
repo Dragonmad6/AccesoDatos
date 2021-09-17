@@ -11,17 +11,24 @@ public class Ejercicio1 {
 		String nombre;
 				
 		//Name Route
-		System.out.println("Escribe una ruta:\n");
-		nombre = sc.nextLine();
-		
-		File carpeta1 = new File(nombre);
-		
-		for(int i=0; i<nombre.length(); i++) {
-			if(nombre.length()<6) {
-				System.out.println("Este archivo debe contener al menos 5 caracteres.");
-			}else{
-				System.out.println("Si va");
+		do {
+			
+			System.out.println("Escribe una ruta:\n");
+			nombre = sc.nextLine();
+			
+			File carpeta1 = new File(nombre);
+			
+			if(carpeta1.length()<5) {
+				System.out.println("No supera los caracteres requeridos.");
 			}
-		}
+			if(carpeta1.isDirectory()) {
+				System.out.println("Es un directorio.");
+			}else if(carpeta1.isDirectory()){
+				System.out.println("Es un directorio.");
+			}
+			
+			
+		}while(nombre.length()<5);
+		
 	}
 }
