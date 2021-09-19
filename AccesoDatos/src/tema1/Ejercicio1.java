@@ -27,12 +27,12 @@ public class Ejercicio1 {
 			}			
 			if(carpeta1.getName().endsWith("txt")) {
 				if((carpeta1.getName().length()-4)>5) {   
-					System.out.println("Está bien");
+					System.out.println("Esta bien");
 					bucle = true;
 				}
 			}
 
-		}while(bucle);
+		}while(bucle = false);
 
 	}
 }
