@@ -13,6 +13,15 @@ import java.util.Scanner;
 public class Tarea3 {
 
 	/**
+	 * Programa que identifica si una ruta que introduce el usuario es válida o no.
+	 * Recorre un listado de todos los ficheros de la ruta Dice las caracteristicas
+	 * Si el archivo se puede leer lo hace solo leible. (Nombre, si se puede editar,
+	 * si es oculto y sus Bytes) que posee cada fichero. En el caso de que no exista
+	 * lo crea y vuelve a preguntar las características.
+	 * 
+	 * A continuacion mira si la ruta es absoluta en el caso de que si procede a
+	 * crear el fichero en el caso de no poder crearlo te avisa.
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
